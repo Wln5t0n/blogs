@@ -5,4 +5,4 @@ tags: test
 
 # This is test ignore me
 
-![](/assets/test-image/test.png)
+![image](/assets/test-image/test.png)
