@@ -27,5 +27,8 @@ key: page-about
 ---
 
 ![Wln5t0n](assets/avatar.jpeg)
+
+Hey Aarish here aka Wln5t0n. is a dedicated and passionate cyber security student pursuing a degree in the field. With a strong interest in technology and a keen eye for detail, I like to do pentesting web, linux, windows.
+
 I occassionally post content on my this <a href="https://wln5t0n.github.io/blogs/">blog.</a>
 
