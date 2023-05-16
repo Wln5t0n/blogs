@@ -27,5 +27,5 @@ key: page-about
 ---
 
 ![Wln5t0n](assets/avatar.jpeg)
-
+I occassionally post content on my this <a href="https://wln5t0n.github.io/blogs/">blog.</a>
 
