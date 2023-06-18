@@ -114,7 +114,7 @@ Task Completed
 At the Footer of the page we can see that web page is from `2017`.
 Any option you click it will take you to `/login` gives a login form
 
-![](https://github.com/Wln5t0n/blogs/blob/master/assets/TwoMillion-Images/Web-page-80.png)
+![](assets/TwoMillion-Images/Web-page-80.png)
 
 Till now we don't have any creds i tried to test forgot passwd but it leads to nothing then i saw "join" which leads to  `/invite`.
 
