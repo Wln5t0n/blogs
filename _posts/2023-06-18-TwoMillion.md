@@ -131,8 +131,8 @@ When you see the source code of the web page will save the invitation code in lo
 localStorage.setItem('inviteCode', code);
 ```
 
-There is obfuscated code in the js file inviteapi.min.js, replace eval with alert to view the original content.
-The js code defines the verifyInviteCode function and the makeInviteCode function.
+There is obfuscated code in the js file `inviteapi.min.js`, replace eval with alert to view the original content.
+The js code defines the `verifyInviteCode` function and the `makeInviteCode` function.
 ```js
 function verifyInviteCode(code) {
     var formData = {
@@ -167,7 +167,7 @@ function makeInviteCode() {
 }
 ```
 
-Now lets try to call the makeInviteCode function directly in the browser console.
+Now lets try to call the `makeInviteCode` function directly in the browser console.
 ![makeInviteCode](https://github.com/Wln5t0n/blogs/assets/85233203/b68f82a2-7f49-4c9a-bc5c-a32aa750b296)
 
 
@@ -190,7 +190,7 @@ When you decode this with ROT13:
 ```
 
 You can use cyberchef to decode this message:
-https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)&input=VmEgYmVxcmUgZ2IgdHJhcmVuZ3IgZ3VyIHZhaXZnciBwYnFyLCB6bnhyIG4gQ0JGRyBlcmRocmZnIGdiIC9uY3YvaTEvdmFpdmdyL3RyYXJlbmdy
+ https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)&input=VmEgYmVxcmUgZ2IgdHJhcmVuZ3IgZ3VyIHZhaXZnciBwYnFyLCB6bnhyIG4gQ0JGRyBlcmRocmZnIGdiIC9uY3YvaTEvdmFpdmdyL3RyYXJlbmdy
 
 Now lets send a `POST` request to get invite code.
 ```ruby
@@ -321,7 +321,7 @@ Content-Length: 17
 {"message":false}
 ```
 
-Lets try to generate admin's vpn `/api/v1/admin/vpn/generate`. A 401 status code is returned when trying to generate a VPN
+Lets try to generate admin's vpn `/api/v1/admin/vpn/generate`. A 401 status code is returned when trying to generate a VPN.
 #### Request
 ```ruby
 POST /api/v1/admin/vpn/generate HTTP/1.1
