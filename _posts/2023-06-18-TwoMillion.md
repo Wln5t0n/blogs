@@ -205,6 +205,7 @@ Seems like base64.
 ```
 
 Lets use this code to register.
+
 ![decoded_invite_code](https://github.com/Wln5t0n/blogs/assets/85233203/a0537fab-98d0-47aa-a32c-3e877cc1beae)
 
 
