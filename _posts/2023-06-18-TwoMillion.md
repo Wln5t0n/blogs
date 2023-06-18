@@ -114,13 +114,15 @@ Task Completed
 At the Footer of the page we can see that web page is from `2017`.
 Any option you click it will take you to `/login` gives a login form
 
-![](https://github.com/Wln5t0n/blogs/blob/8e52e2b0ecbc107c266b126e10c0e738d36bea46/assets/TwoMillion-Images/Web-page-80.png)
+![Web-page-80](https://github.com/Wln5t0n/blogs/assets/85233203/3e53c557-3013-4aa7-b0e3-82af3bd957ab)
+
 
 Till now we don't have any creds i tried to test forgot passwd but it leads to nothing then i saw "join" which leads to  `/invite`.
 
 ### Register account
 
-![](Images/invite.png)
+
+![Uploading invite.png…]()
 
 When you see the source code of the web page will save the invitation code in local storage, and when the invitation code is randomly input, it will prompt that the verification code is invalid.
 ```ruby
