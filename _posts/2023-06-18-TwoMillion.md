@@ -1,6 +1,6 @@
 
 To celebrate 2,000,000 HackTheBox members, HackTheBox introduced TwoMillion, a special release. This release is exclusively available to retired members, offering a unique experience devoid of points and bloods. TwoMillion mimics the appearance of the original HackTheBox platform, complete with the familiar invite code challenge that requires solving for registration. Once successfully registered, my journey begins by enumerating the API to locate an endpoint that grants administrator privileges. Exploiting a command injection vulnerability within another admin endpoint, I gain access. Utilizing the obtained database credentials, I pivot to the next user, and with the aid of a kernel exploit, I encounter an intriguing Easter egg challenge that contains a heartfelt thank you message.
-## Scanning
+# Scanning
 
 ```ruby
 ^^/H/TwoMillion >>> rs 10.10.11.221                                                                                                                     (130) 09:15:31 
@@ -73,7 +73,7 @@ We should add ip and domain in `/etc/hosts`
 10.10.10.11 2million.htb
 ```
 
-### Directory Bruteforce
+# Directory Bruteforce
 
 ```ruby
 ^^/H/TwoMillion >>> dirsearch -u http://2million.htb/ -x 403,404                                                                                              09:39:50 
@@ -107,7 +107,7 @@ Target: http://2million.htb/
 Task Completed
 ```
 
-### Website - TCP 80
+# Website - TCP 80
 #### Site
 
 At the Footer of the page we can see that web page is from `2017`.
@@ -838,7 +838,7 @@ bfd36c19a809981c06a91882b6800549
 </tls-auth>
 ```
 
-#### Injection
+# Injection
 It is guessed that the way to generate the certificate may directly splice Linux commands, and there is command injection. When trying to use the ls command directly, it fails, but when curl runs OOB, the information is successfully obtained, confirming that there is command injection.
 
 ```ruby
@@ -975,7 +975,7 @@ cat user.txt
 d28a<snip>0bea423
 ```
 
-### Shell as root
+# Shell as root
 
 As we got a user name as admin there is a hint for were to look first ting came in my mind is to check mail `/var/mail/admin`.
 
