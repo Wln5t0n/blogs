@@ -122,7 +122,8 @@ Till now we don't have any creds i tried to test forgot passwd but it leads to n
 ### Register account
 
 
-![Uploading invite.png…]()
+![invite](https://github.com/Wln5t0n/blogs/assets/85233203/67bf4312-7580-4327-b551-09a88f665b99)
+
 
 When you see the source code of the web page will save the invitation code in local storage, and when the invitation code is randomly input, it will prompt that the verification code is invalid.
 ```ruby
@@ -167,7 +168,8 @@ function makeInviteCode() {
 ```
 
 Now lets try to call the makeInviteCode function directly in the browser console.
-![](Images/makeInviteCode.png)
+![makeInviteCode](https://github.com/Wln5t0n/blogs/assets/85233203/b68f82a2-7f49-4c9a-bc5c-a32aa750b296)
+
 
 #### Response
 ```ruby
@@ -203,10 +205,12 @@ Seems like base64.
 ```
 
 Lets use this code to register.
-![](Images/decoded_invite_code.png)
+![decoded_invite_code](https://github.com/Wln5t0n/blogs/assets/85233203/a0537fab-98d0-47aa-a32c-3e877cc1beae)
+
 
 So now we are in now we can access `/home`.
-![](Images/home-page.png)
+![home-page](https://github.com/Wln5t0n/blogs/assets/85233203/8ac2b848-6a27-44c0-83d1-367937fbff69)
+
 
 I didn't got any thing strange in webpage then i saw `http://2million.htb/js/htb-backend.min.js`. we have direct access to `/api`, which will give the path information.
 ```js
