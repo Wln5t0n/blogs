@@ -1076,13 +1076,13 @@ See "man sudo_root" for details.
 root@2million:/tmp/CVE-2023-0386-main#
 ```
 
-WOOT WOOT we are root not just 
+WOOT WOOT we are root now we can just copy the root flag.
 ```ruby
 root@2million:/root# cat root.txt
 02336e92<snip>2e24
 ```
 
-And there is 1 thankyou not as well.
+And there is 1 thankyou note as well.
 ```ruby
  Dear HackTheBox Community,
  
