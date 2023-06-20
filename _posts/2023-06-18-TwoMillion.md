@@ -193,7 +193,7 @@ When you decode this with ROT13:
 ```
 
 You can use cyberchef to decode this message:
- https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)&input=VmEgYmVxcmUgZ2IgdHJhcmVuZ3IgZ3VyIHZhaXZnciBwYnFyLCB6bnhyIG4gQ0JGRyBlcmRocmZnIGdiIC9uY3YvaTEvdmFpdmdyL3RyYXJlbmdy
+ <a>CyberChefhref="https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)&input=VmEgYmVxcmUgZ2IgdHJhcmVuZ3IgZ3VyIHZhaXZnciBwYnFyLCB6bnhyIG4gQ0JGRyBlcmRocmZnIGdiIC9uY3YvaTEvdmFpdmdyL3RyYXJlbmdy"</a>
 
 Now lets send a `POST` request to get invite code.
 ```ruby
