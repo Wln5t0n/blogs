@@ -1102,3 +1102,5 @@ With deepest gratitude,
 The HackTheBox Team
 ```
 
+**Activate-Windows(Wln5t0n)**
+
