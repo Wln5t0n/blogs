@@ -3,6 +3,8 @@ title: Convergence of Process Doppelgänging and Process Hollowing within the Os
 tags: Process-Injection Doppelgänging Osiris NTDLL SYSCALL Process-Hollowing Kernel-Transaction-Manager Distributed-Transaction-Coordinator TxF TxR CLFS NTFS-transactions
 ---
 
+![DP864236](https://github.com/Wln5t0n/blogs/assets/85233203/652e3019-1cba-4d43-aa81-1714a83b43ba)
+
 One of the paramount objectives pursued by malicious software authors pertains to the flawless emulation of authentic processes. This endeavor aims to facilitate the inconspicuous execution of their malevolent modules, thereby evading detection by antivirus solutions. Throughout time, a multitude of methodologies have surfaced, aiding these actors in advancing towards the realization of this aspiration. This subject matter equally captivates the attention of researchers and reverse engineers, as it unveils ingenious applications of Windows APIs.
 
 [Process Doppelgänging](https://hshrzd.wordpress.com/2017/12/18/process-doppelganging-a-new-way-to-impersonate-a-process/), a new technique of impersonating a process, was published in 2017 at the [Black Hat conference](https://www.youtube.com/watch?v=Cch8dvp836w). After some time, a ransomware named [SynAck was found adopting that technique](https://securelist.com/synack-targeted-ransomware-uses-the-doppelganging-technique/85431/) for malicious purposes. Even though `Process Doppelgänging` still remains rare in the wild, I recently discovered some of its traits in the dropper for the Osiris banking Trojan ([a other version of the infamous Kronos](https://www.proofpoint.com/us/threat-insight/post/kronos-reborn)). After closer examination, I found out that the original technique was further customized.
