@@ -108,8 +108,7 @@ A PLC is often used to control relatively small processes, such as one leg of an
 ### What is Industrial Control Systems (ICS) ?
 PLC, DPU, SCADA, and DCS all fall into the category of ICS. The architecture of a PLC is theoretically similar to a DPU, so we will look at PLCs more closely as a model.
 
-![ICS_INFRA-ICS](https://github.com/Wln5t0n/blogs/assets/85233203/7bd1b876-fa66-4c6a-89b0-1900cc07c916)
-
+![ICS_INFRA-PLC](https://github.com/Wln5t0n/blogs/assets/85233203/91b0197f-da6d-463f-b1cd-66f6fad46648)
 
 Other components that round out a complete ICS. 
 - HMI – Human Machine Interface 
