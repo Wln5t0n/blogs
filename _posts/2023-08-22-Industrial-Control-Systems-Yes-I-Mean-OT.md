@@ -1,12 +1,16 @@
+---
+title: Industrial Control Systems Yes I Mean OT
+tags: ICS OT Control-System Industrial-control-systems PLC SCADA Purdue-Model HMIS
+---
 
-##Industrial Control Systems Yes I Mean OT
+#Industrial Control Systems Yes I Mean OT
 
 ![american-public-power-association-bv2pvCGMtzg-unsplash](https://github.com/Wln5t0n/blogs/assets/85233203/6e09257a-baa1-46e0-a55f-e5231a85fb49)
 
 #### Lets understand Control systems and their processes!
 
 A device, or set of devices, that manages, commands, directs, or regulates the behavior of other devices or systems.
-- A device that can influence the ''real world''
+- A device that can influence the 'real world'
 - A system that bridges cyber-to-physical
 
 Simple example: Thermostats in our homes
