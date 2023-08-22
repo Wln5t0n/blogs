@@ -1,4 +1,8 @@
-## Control systems and their processes, professions, and industries
+##Industrial Control Systems Yes I Mean OT
+
+![american-public-power-association-bv2pvCGMtzg-unsplash](https://github.com/Wln5t0n/blogs/assets/85233203/6e09257a-baa1-46e0-a55f-e5231a85fb49)
+
+#### Lets understand Control systems and their processes!
 
 A device, or set of devices, that manages, commands, directs, or regulates the behavior of other devices or systems.
 - A device that can influence the ''real world''
@@ -23,7 +27,7 @@ Simply, a control system gathers information and then performs a function based 
 **Reference:**
 ISA-62443.01.0I definitions, http://std.iec.ch/glossary
 
-![[ICS_INFRA-NIST.png]]
+![ICS_INFRA-NIST](https://github.com/Wln5t0n/blogs/assets/85233203/8d1350c0-5261-4e9a-9fdf-5ea8342ae5e8)
 
 The logic diagram shown displays typical inputs and outputs to the various control system components as well as typical operations that are performed by the various components. 
 
@@ -75,11 +79,12 @@ The Purdue model suggests dividing your systems into five different levels, numb
 
 To understand the complexity of the OT environment, the Extended Purdue model was developed which is derived from the generic ICS model and applies specific layers defined within Table 1.
 
-![[ICS_INFRA-Table.png]]
+![ICS_INFRA-Table](https://github.com/Wln5t0n/blogs/assets/85233203/bf0ffd53-b35f-48da-98da-4eba4cb42ccd)
 
 ### Extended Purdue Model
 
-![[Extended-Purdue-Model.png]]
+![Extended-Purdue-Model](https://github.com/Wln5t0n/blogs/assets/85233203/08abb462-05df-4b47-9fcd-61ab416f38e9)
+
 
 To make cybersecurity better, NIST 800-82r2 creates different zones. These zones need clear explanations. The next part will talk about these zones from NIST 800-82r2. There's also a picture that helps understand these zones better. You can find more detailed information about NIST 800-82r2 in the references section.
 
@@ -90,14 +95,16 @@ In 1968, GM sought a replacement for these costly relay systems. The winning pro
 PLCs are computer-based, solid-state devices that control industrial equipment and processes. Although PLCs are control System components used throughout SCADA and DCSs. they are often the primary components in smaller control System configurations used to provide operational control of discrete processes, such as automobile assembly lines and power plant soot blower controls. PLCs are used extensively in almost all industrial processes.
 
 **A small Allen Bradley PLC with processor and I/O cards**
-![[Allen-Bradley-PLC.png]]
+
+<img width="472" alt="Allen-Bradley-PLC" src="https://github.com/Wln5t0n/blogs/assets/85233203/43fba2b3-15ce-4a05-812e-afb05cf902d5">
 
 A PLC is often used to control relatively small processes, such as one leg of an assembly line or other process with a few components. From a few up to a few hundred Input/Output (I/O) points each. Supervisory Control And Data Acquisition (SCADA) refers to multiple PLCs networked together for control of multiple small processes, often including small processes at remote sites.  A Distributed Control System (DCS) is used for larger processes, such as a power generation process or other centralized plantwide control, using Distributed Processing Units (DPU) on a dedicated network with each DPU handling thousands of points of I/O.
 
 ### What is Industrial Control Systems (ICS) ?
 PLC, DPU, SCADA, and DCS all fall into the category of ICS. The architecture of a PLC is theoretically similar to a DPU, so we will look at PLCs more closely as a model.
 
-![[ICS_INFRA-PLC.png]]
+![ICS_INFRA-ICS](https://github.com/Wln5t0n/blogs/assets/85233203/7bd1b876-fa66-4c6a-89b0-1900cc07c916)
+
 
 Other components that round out a complete ICS. 
 - HMI – Human Machine Interface 
@@ -110,7 +117,7 @@ Other components that round out a complete ICS.
 
 The Human Machine Interface is what most people think of first when considering a control system (much like your grandmother who brings her flat-screen monitor in to get a virus removed and leaves the tower at home). This is the GUI for the process, and yes, most of them look that old (it's a recurring theme you'll see through out the class).
 
-![[SCADA-HMI.webp]]
+![SCADA-HMI](https://github.com/Wln5t0n/blogs/assets/85233203/74bb55d6-761b-48c2-8739-703f9ff71a84)
 
 The HMI is usually organized as a model diagram of the process. If you are looking at a chemical system, the screen is going to contain pump icons, tanks and levels, flow indicators, and agitator indicators to let the operator know what's happening with the process. This diagram was created by the process integrator or operator when the system was being assembled.
 
