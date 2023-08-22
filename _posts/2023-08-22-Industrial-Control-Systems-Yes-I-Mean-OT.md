@@ -19,6 +19,8 @@ Simple example: Thermostats in our homes
 **Industrial control systems (ICS)**
 - Exponentially larger, more complex, and more dangerous
 
+---
+
 Control systems are defined here as "a device, or set of devices, that manages, commands, directs, or regulates the behavior of other devices or systems.'' This can take a variety of shapes, from a large chemical processing plant to the system controlling your gas furnace at home. The system takes a set of input data from its devices (such as a thermostat), performs logic on that data (the temperature is 70°F  when it should be 72°F ), and activates components to affect that sensor data (I'll turn on the fireplace so it heats back up to 72°F).
 
 This is a gross simplification, but for example, what kind of logic is required to be energy efficient so the heat of the house isn't constantly bouncing between 72oF and 68oF as the furnace kicks on and off again? Or, what if the temperature sensor fails and reports the room to be 00F when it is really 78°F? What kind of mechanisms are in place to handle this?
