@@ -25,7 +25,7 @@ Control systems are defined here as "a device, or set of devices, that manages, 
 
 This is a gross simplification, but for example, what kind of logic is required to be energy efficient so the heat of the house isn't constantly bouncing between 72oF and 68oF as the furnace kicks on and off again? Or, what if the temperature sensor fails and reports the room to be 00F when it is really 78°F? What kind of mechanisms are in place to handle this?
 
-What happens if the thermostat is IP-based and an attacker manages to fool the system into thinking it's 700F when it's really 5°F?
+What happens if the thermostat is IP-based and an attacker manages to fool the system into thinking it's 70°F when it's really 5°F?
 
 Simply, a control system gathers information and then performs a function based on established parameters and/or information it received. ICS can vary in size and complexity based upon the process it is responsible for monitoring and controlling. ICS can be found in very specific applications (e.g., found on a small skid-mounted system) or manage something as large as a multiple-unit generation facility or oil refinery.
 
