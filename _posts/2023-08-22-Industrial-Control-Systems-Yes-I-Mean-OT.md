@@ -116,7 +116,7 @@ Other components that round out a complete ICS.
 - ENG – Engineering workstation 
 - HIST – Process data archive
 
-![[ICS_INFRA-ICS.png]]
+![ICS_INFRA-ICS](https://github.com/Wln5t0n/blogs/assets/85233203/35accf7f-2b3c-4723-99ec-ffea47953133)
 
 ### HUMAN MACHINE INTERFACES (HMIS)
 
