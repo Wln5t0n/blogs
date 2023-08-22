@@ -28,7 +28,7 @@ What happens if the thermostat is IP-based and an attacker manages to fool the s
 Simply, a control system gathers information and then performs a function based on established parameters and/or information it received. ICS can vary in size and complexity based upon the process it is responsible for monitoring and controlling. ICS can be found in very specific applications (e.g., found on a small skid-mounted system) or manage something as large as a multiple-unit generation facility or oil refinery.
 
 **Reference:**
-ISA-62443.01.0I definitions, http://std.iec.ch/glossary
+ISA-62443.01.0I definitions, [http://std.iec.ch/glossary](http://std.iec.ch/glossary)
 
 ![ICS_INFRA-NIST](https://github.com/Wln5t0n/blogs/assets/85233203/8d1350c0-5261-4e9a-9fdf-5ea8342ae5e8)
 
@@ -129,7 +129,7 @@ Additionally, an HMI is responsible for displaying important information to the 
 What the HMI may be indispensable for, however, is for manual control of the process. Manual controls may exist on individual components, but it is not uncommon for ICSs to be very large or to have components in remote locations that make actually visiting the devices problematic.
 
 **Reference:**
-https://www.wonderware.com/
+[https://www.wonderware.com/](https://www.wonderware.com/)
 
 That's it for this blog I will try to cover more topics related to ICS later. 
 Hope you guys find this blog interesting.
