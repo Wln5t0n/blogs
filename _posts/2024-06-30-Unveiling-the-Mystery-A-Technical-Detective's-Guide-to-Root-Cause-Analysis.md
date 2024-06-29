@@ -4,7 +4,7 @@ tags: RCA Investigation Digital-Forensics Logs-Anslysis
 ---
 
 
-## Introduction
+#### Introduction
 
 The digital world thrives on seamless operation. But when glitches creep in or cyberattacks strike, it's like hitting a roadblock on a high-speed journey. That's where I come in, your technical detective! For the past six months, I've been on a mission to solve these mysteries, conducting Root Cause Analysis (RCA) for a variety of technical glitches or cyber attacks.
 
