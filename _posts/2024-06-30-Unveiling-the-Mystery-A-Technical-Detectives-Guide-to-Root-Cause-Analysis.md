@@ -20,7 +20,8 @@ This case study dives into the investigation of a ransomware attack that targete
 
 **The Incident: A Night of Disruption**
 
-![RCA drawio(2)](https://github.com/Wln5t0n/blogs/assets/85233203/ca910827-8917-41ad-aade-7c4850f283ea)
+![RCA drawio(4)](https://github.com/Wln5t0n/blogs/assets/85233203/b5e7938a-32a9-41f3-b9e6-831a12627a67)
+
 
 On October 23rd, between 11 PM and midnight, the Company's infrastructure encountered a series of anomalies. The saga began with a workstation in a branch exhibiting suspicious activity. This workstation attempted to log in to another machine four times consecutively, deviating from the standard practice of a single login for data transmission.
 
