@@ -1,6 +1,6 @@
 ---
 title: Unveiling the Mystery A Technical Detectives Guide to Root Cause Analysis
-tags: RCA Investigation Digital-Forensics Logs-Anslysis
+tags: RCA Investigation Digital Forensics Logs Anslysis
 ---
 
 
