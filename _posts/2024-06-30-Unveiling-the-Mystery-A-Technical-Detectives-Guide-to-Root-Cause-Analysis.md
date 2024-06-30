@@ -20,6 +20,8 @@ This case study dives into the investigation of a ransomware attack that targete
 
 **The Incident: A Night of Disruption**
 
+![RCA drawio](https://github.com/Wln5t0n/blogs/assets/85233203/6a14a09b-283e-481d-99c1-0d4910f9bc2c)
+
 On October 23rd, between 11 PM and midnight, the Company's infrastructure encountered a series of anomalies. The saga began with a workstation in a branch exhibiting suspicious activity. This workstation attempted to log in to another machine four times consecutively, deviating from the standard practice of a single login for data transmission.
 
 Following these login attempts, the attacker unleashed a network scan across the entire subnet using a program called "advance_network_scanner.exe." This reconnaissance mission was likely aimed at identifying critical systems within the network.
