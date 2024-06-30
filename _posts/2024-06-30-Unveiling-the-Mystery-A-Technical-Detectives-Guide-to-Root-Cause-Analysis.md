@@ -3,6 +3,8 @@ title: Unveiling the Mystery A Technical Detectives Guide to Root Cause Analysis
 tags: RCA Investigation Digital Forensics Logs Anslysis
 ---
 
+![luke-chesser-JKUTrJ4vK00-unsplash](https://github.com/Wln5t0n/blogs/assets/85233203/4a1bc135-0748-423a-906b-f08948dc4524)
+
 
 #### Introduction
 
