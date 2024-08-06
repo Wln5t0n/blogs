@@ -15,10 +15,6 @@ After analyzing multiple `Crash Dump` file generated when the blue screen incide
 
 From a foreign perspective, relevant countries in Europe and America are the main influencing countries. We focused on statistics on the influence of Asian neighboring countries. details as follows:
 
-## Exclusive impact analysis
-
-From a foreign perspective, relevant countries in Europe and America are the main influencing countries. We focused on statistics on the influence of Asian neighboring countries. details as follows:
-
 ![2](https://github.com/user-attachments/assets/71e6ade2-6d17-4eb2-a1f0-87de57c1b223)
 
 ## Restoration of technical details
