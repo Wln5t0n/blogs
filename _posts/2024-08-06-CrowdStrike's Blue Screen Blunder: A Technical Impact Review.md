@@ -1,5 +1,5 @@
 ---
-title: Exclusive impact analysis! key technical details of CrowdStrike causing large-scale blue screens
+title: CrowdStrike's Blue Screen Blunder: A Technical Impact Review
 tags: reverse engineering IDA PRO Crowdstrike falcon windows kernel userland api sesnsor outage crash dump agent analysis BSOD Blue Screen
 ---
 
