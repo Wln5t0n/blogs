@@ -1,3 +1,8 @@
+---
+title: Exclusive impact analysis! key technical details of CrowdStrike causing large-scale blue screens
+tags: reverse engineering IDA PRO Crowdstrike falcon windows kernel userland api sesnsor outage crash dump agent analysis
+---
+
 # overall event background
 
 Starting at 9:09 AM IST on July 19, 2024, India time, users in many places around the world began to report that computers running the Microsoft Windows operating system had a blue screen phenomenon. According to statistics from public reports, so far, this incident has affected banking, aviation, medical and other company services in at least more than 20 countries around the world. More than 21,000 flights around the world have been delayed, and a large number of hospitals have been forced to postpone operations. Business services and public services have been paralyzed. In terms of scope and degree of damage, the impact of this incident has far exceeded the system blue screen incident caused by Symantec in 2007, and has become the largest disaster caused by security products themselves in the past 15 years. event.
