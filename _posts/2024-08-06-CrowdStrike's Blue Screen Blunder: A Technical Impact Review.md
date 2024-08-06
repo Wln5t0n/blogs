@@ -1,5 +1,5 @@
 ---
-title: CrowdStrike's Blue Screen Blunder: A Technical Impact Review
+title: CrowdStrike Blue Screen Blunder A Technical Impact Review
 tags: reverse engineering IDA PRO Crowdstrike falcon windows kernel userland api sesnsor outage crash dump agent analysis BSOD Blue Screen
 ---
 
