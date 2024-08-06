@@ -1,29 +1,31 @@
 ---
 title: Exclusive impact analysis! key technical details of CrowdStrike causing large-scale blue screens
-tags: reverse engineering IDA PRO Crowdstrike falcon windows kernel userland api sesnsor outage crash dump agent analysis
+tags: reverse engineering IDA PRO Crowdstrike falcon windows kernel userland api sesnsor outage crash dump agent analysis BSOD Blue Screen
 ---
 
-# overall event background
+![BSOD](https://github.com/user-attachments/assets/7953d966-61da-4640-9102-821064c042c2)
+
+## overall event background
 
 Starting at 9:09 AM IST on July 19, 2024, India time, users in many places around the world began to report that computers running the Microsoft Windows operating system had a blue screen phenomenon. According to statistics from public reports, so far, this incident has affected banking, aviation, medical and other company services in at least more than 20 countries around the world. More than 21,000 flights around the world have been delayed, and a large number of hospitals have been forced to postpone operations. Business services and public services have been paralyzed. In terms of scope and degree of damage, the impact of this incident has far exceeded the system blue screen incident caused by Symantec in 2007, and has become the largest disaster caused by security products themselves in the past 15 years. event.
 
 After analyzing multiple `Crash Dump` file generated when the blue screen incident occurred as soon as the incident occurred. The direct cause of the incident was the "CSAgent.sys" driver, which belongs to the American network security company CrowdStrike and is its Windows security The core kernel driver component of the product.
 
-# Exclusive impact analysis
+## Exclusive impact analysis
 
 From a foreign perspective, relevant countries in Europe and America are the main influencing countries. We focused on statistics on the influence of Asian neighboring countries. details as follows:
 
-# Exclusive impact analysis
+## Exclusive impact analysis
 
 From a foreign perspective, relevant countries in Europe and America are the main influencing countries. We focused on statistics on the influence of Asian neighboring countries. details as follows:
 
 ![2](https://github.com/user-attachments/assets/71e6ade2-6d17-4eb2-a1f0-87de57c1b223)
 
-# Restoration of technical details
+## Restoration of technical details
 
 Nearly two weeks have passed since the incident occurred, and CrowdStrike, other domestic and foreign security manufacturers and research institutions have not provided detailed technical analysis. After the incident, we collected multiple `Crash Dumps` and Agent exe perspective to obtain first-hand comprehensive information, conduct in-depth analysis, and restore the details of the entire incident. We are disclosing some technical details to make a modest contribution to avoid the recurrence of similar accidents and promote the development of the domestic safety industry.
 
-## 1.Crash scene information
+### 1.Crash scene information
 
 We observed that multiple versions of the CrowdStrike probe driver caused crashes. Judging from the monitored crash data, 75% of the crash increments are concentrated at the offset 0xe14ed of the CrowdStrike Windows version probe 7.15.18513.0.
 
@@ -42,7 +44,7 @@ By reading the disassembly code at the CSAgent(7.15.18513.0)+0xe14ed offset, as 
 
 As you can see, the previous instruction is to determine whether the address pointed to by r8 is empty. The direct cause of this blue screen is actually an index out-of-bounds access (OOB Read) caused by `mov r8 qword[rax+r11*8]`.
 
-## 2. Introduction to the CrowdStrike Directory
+### 2. Introduction to the CrowdStrike Directory
 
 CrowdStrike files are mainly located in the two directories `C:\Program Files\CrowdStrike` and `C:\Windows\System32\drivers\CrowdStrike`. Among them, `C:\Program Files\CrowdStrike` contains user mode components, background services, scanning tools and tray components.
 
@@ -52,7 +54,7 @@ The `\SystemRoot\Drivers\CrowdeStrike` directory contains CrowdeStrike's kernel 
 
 ![7](https://github.com/user-attachments/assets/a4ee78ac-9723-4d1e-b22e-00f67fbd5cb5)
 
-## 3. Core component analysis
+### 3. Core component analysis
 
 CSAgent.sys is the core component of the CrowdStrike Windows version probe. It is a very large driver and can be regarded as a collection of multiple protection drivers. Taking version 7.16.18605.0 as an example, the compiled file size reaches 4.28 MB, and IDAPro automatically recognizes 10816 functions, which shows the complexity of its functions. Its main functions include:
 
@@ -69,7 +71,7 @@ CSAgent.sys is the core component of the CrowdStrike Windows version probe. It i
 (11) Implemented three sets of trace mechanisms based on ETW, WMI, and Clfs, and supported HTTPS transmission of telemetry logs;
 (12) Implemented performance monitoring based on CPU performance counters.
 
-## 4. Kernel dynamically loads driver
+### 4. Kernel dynamically loads driver
 
 `CSAgent.sys` calls `nt!ZwSetSystemInformation` to realize the kernel's ability to load and unload drivers.
 
@@ -79,7 +81,7 @@ It is worth mentioning that there are two uses of `nt!ZwSetSystemInformation` in
 
 In `csagent+0x5a468`, it is to dynamically load new function modules. After loading, the `DriverEntry` of the loaded module is directly called. For files such as `Osfm-00000001.bin`, although they are also loaded into the kernel, their entry points are not called. Instead, the content at the entry is parsed as rule data. The format will be explained in detail later.
 
-## 5. Firmware check
+### 5. Firmware check
 
 Osfm represents operating system firmware, and takes the format of `Osfm-%08U.bin` as the file name, where Osfm represents operating system firmware. Describes the path to the key file (what CrowdStrike calls firmware) that needs to be checked.
 
@@ -101,7 +103,7 @@ After being loaded into memory, it will be automatically corrected to the actual
 
 `CSAgent.sys` will automatically find the latest `Osfm-*.bin` file in the CrowdStrike directory, read its version information in the `OSFM-%08u.bin` format, load the latest one, and automatically delete the previous file. Old files whose modification time was 1 day ago.
 
-## 6. Key file analysis (C-%08U-%08U-%08U.sys file format)
+### 6. Key file analysis (C-%08U-%08U-%08U.sys file format)
 
 Although the file named `C-00000001-00000000-00000025.sys` has a `.sys` extension, it is not actually a kernel driver file, but a rule file used by `CSAgent.sys`. As shown in the figure, there are no MZ and PE headers required for the executable file.
 
@@ -127,7 +129,7 @@ We re-examined the cause of the blue screen. `CSAgent.sys` implements a custom v
 
 After analyzing the rule format and virtual machine instructions, you can understand what the blue screen point `CSAgent+0xe3b58` is doing. The processing of the blue screen is actually to interpret the error opcode contained in the execution of `C-00000291-00000000-00000009.sys`.
 
-# Re-examining the causes of blue screens
+## Re-examining the causes of blue screens
 
 It is worth mentioning that recently there is an analysis circulating on foreign websites that this incident was just a denial of service caused by zero address access. The analysis received hundreds of thousands of likes and comments, but the claim is factually incorrect.
 
